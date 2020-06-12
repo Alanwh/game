@@ -1,0 +1,231 @@
+#app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: url('./assets/bg.png') no-repeat;
+  background-size: cover;
+}
+
+.header {
+  width: 378px;
+  height: 195px;
+  background: url('./assets/logo.png') no-repeat;
+  background-size: 100%;
+  margin: 40px auto;
+  position: relative;
+  z-index: 100;
+}
+
+.share {
+  width: 78px;
+  height: 78px;
+  background: url('./assets/share.png') no-repeat;
+  background-size: 100%;
+  position: absolute;
+  right: 26px;
+  top: 26px;
+}
+
+.instruction {
+  width: 147px;
+  height: 71px;
+  background: url('./assets/instruction.png') no-repeat;
+  background-size: 100%;
+  position: absolute;
+  right: 0px;
+  top: 300px;
+}
+
+.gift {
+
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .island {
+    width: 240px;
+    height: 160px;
+    background: url('./assets/island.gif') no-repeat;
+    background-size: cover;
+    position: absolute;
+
+    &.active {
+      background: url('./assets/active-island.png') no-repeat;
+      background-size: cover;
+    }
+
+    &.island-1 {
+      top: 30vh;
+      left: 35px;
+    }
+
+    &.island-2 {
+      top: 25vh;
+      right: 140px;
+    }
+
+    &.island-3 {
+      top: 40vh;
+      left: 255px;
+    }
+
+    &.island-4 {
+      top: 50vh;
+      left: 35px;
+    }
+
+    &.island-5 {
+      top: 50vh;
+      right: 35px;
+    }
+
+    &.island-6 {
+      top: 60vh;
+      left: 255px;
+    }
+
+    &.island-7 {
+      top: 70vh;
+      left: 35px;
+    }
+
+    &.island-8 {
+      top: 70vh;
+      right: 35px;
+    }
+
+    .small-arrow {
+      width: 76px;
+      height: 70px;
+      background: url('./assets/small-arrow.png') no-repeat;
+      background-size: cover;
+      transition: all ease-out;
+
+      &.small-arrow-1 {
+        animation: arrow1 150ms;
+        transform: translateX(110px) translateY(0);
+      }
+
+      &.small-arrow-2 {
+        animation: arrow2 150ms;
+        transform: translateX(90px) translateY(-70px);
+      }
+
+      &.small-arrow-3 {
+        animation: arrow3 150ms;
+        transform: translateX(130px) translateY(-140px);
+      }
+    }
+  }
+}
+
+.times {
+  width: 138px;
+  height: 47px;
+  background: url('./assets/times.png') no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: 140px;
+  left: 40px;
+  z-index: 1;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 47px;
+  text-indent: 30px;
+}
+
+.arrow {
+  width: 271px;
+  height: 275px;
+  background: url('./assets/arrow.png') no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: -66px;
+  left: 50%;
+  margin-left: -135px;
+  z-index: 1;
+
+  &.hasSend {
+    height: 115px;
+    bottom: 4px;
+    background: url('./assets/send-arrow.png') no-repeat;
+    background-size: 100%;
+  }
+}
+
+.active-arrow {
+  width: 198px;
+  height: 375px;
+  background: url('./assets/active-arrow.png') no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: -375px;
+  left: 50%;
+  margin-left: -93px;
+
+  z-index: 2;
+}
+
+.footer {
+  width: 750px;
+  height: 154px;
+  background: url('./assets/footer.png') no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+
+  .once {
+    width: 167px;
+    height: 86px;
+    background: url('./assets/once.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 12px;
+    left: 34px;
+  }
+
+  .tenth {
+    width: 167px;
+    height: 86px;
+    background: url('./assets/tenth.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 12px;
+    right: 34px;
+  }
+}
+
+@keyframes arrow1 {
+  from {
+    transform: translateX(350px) translateY(-350px);
+  }
+
+  to {
+    transform: translateX(110px) translateY(0);
+  }
+}
+
+@keyframes arrow2 {
+  from {
+    transform: translateX(350px) translateY(-350px);
+  }
+
+  to {
+    transform: translateX(90px) translateY(-70px);
+  }
+}
+
+@keyframes arrow3 {
+  from {
+    transform: translateX(350px) translateY(-350px);
+  }
+
+  to {
+    transform: translateX(130px) translateY(-140px);
+  }
+}
