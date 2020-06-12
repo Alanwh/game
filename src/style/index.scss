@@ -101,20 +101,19 @@
       height: 70px;
       background: url('./assets/small-arrow.png') no-repeat;
       background-size: cover;
-      transition: all ease-out;
 
       &.small-arrow-1 {
-        animation: arrow1 150ms;
+        animation: arrow1 50ms;
         transform: translateX(110px) translateY(0);
       }
 
       &.small-arrow-2 {
-        animation: arrow2 150ms;
+        animation: arrow2 50ms;
         transform: translateX(90px) translateY(-70px);
       }
 
       &.small-arrow-3 {
-        animation: arrow3 150ms;
+        animation: arrow3 50ms;
         transform: translateX(130px) translateY(-140px);
       }
     }
@@ -201,31 +200,52 @@
 }
 
 @keyframes arrow1 {
-  from {
-    transform: translateX(350px) translateY(-350px);
+  0% {
+    opacity: 0;
+    transform: translateX(310px) translateY(-200px);
   }
 
-  to {
+  80% {
+    opacity: 1;
+    transform: translateX(200px) translateY(-90px);
+  }
+
+  100% {
+    opacity: 1;
     transform: translateX(110px) translateY(0);
   }
 }
 
 @keyframes arrow2 {
-  from {
-    transform: translateX(350px) translateY(-350px);
+  0% {
+    opacity: 0;
+    transform: translateX(290px) translateY(-270px);
   }
 
-  to {
+  80% {
+    opacity: 1;
+    transform: translateX(180px) translateY(-160px);
+  }
+
+  100% {
+    opacity: 1;
     transform: translateX(90px) translateY(-70px);
   }
 }
 
 @keyframes arrow3 {
-  from {
-    transform: translateX(350px) translateY(-350px);
+  100% {
+    opacity: 0;
+    transform: translateX(330px) translateY(-340px);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(220px) translateY(-230px);
   }
 
   to {
+    opacity: 1;
     transform: translateX(130px) translateY(-140px);
   }
 }

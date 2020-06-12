@@ -43,7 +43,7 @@ export default {
         this.rollGame(this.times)
         this.times++
         this.times > 9 && clearInterval(timer3)
-      }, 1350)
+      }, 750)
     },
     rollGame (n) {
       const reward = this.result[n]
@@ -56,12 +56,12 @@ export default {
             const timer2 = setInterval(() => {
               this.index++
               this.index > 9 && clearInterval(timer2)
-            }, 100)
-          }, 150)
+            }, 50)
+          }, 200)
         } else {
           this.index++
         }
-      }, 100)
+      }, 50)
     }
   }
 }
